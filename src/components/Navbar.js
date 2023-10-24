@@ -1,32 +1,29 @@
 import React from "react";
-import "./Navbar.css"
-import { FaSearch, FaBars, FaSpinner, FaAngleDown } from 'react-icons/fa';
+import { FaBars, FaSearch } from "react-icons/fa";
+import DropDownInput from "./common/DropDownInput";
 
-export default function Navbar() { 
-    return (
-        <div className="nav">
-        <button className="nav-button">
-        <nav className="accessories">
-                <nav className="access">straps</nav><FaAngleDown size={20} color="black" /></nav>
-        </button>
-        <button className="nav-button">
-            <nav className="accessories">
-                <nav className="access">accessories</nav><FaAngleDown size={20} color="black" /></nav>
-            
-        </button>
-        <nav> <FaSpinner className="spinner" />Prostraps</nav>
+import logo from "../assets/images/logo.png";
+import "./Navbar.css";
 
-        <button className="nav-button">
-            <nav className="search">Search... <nav className="search-icon"><FaSearch size={15} color="black" /></nav></nav>
-        
-        </button>
-        <button className="nav-button-cart">cart</button>
-        <h5>Menu</h5>
-        <FaBars size={15} color="black" />
+export default function Navbar() {
+  return (
+    <div className="nav">
+      <div>
+        <DropDownInput name="straps" />
+        <DropDownInput name="accessories" />
+      </div>
 
-        </div>
-    )
-         
+      <img src={logo} alt="Logo" width="100" />
 
-    
+      <div>
+        <DropDownInput
+          name="search..."
+          icon={<FaSearch size={20} color="black" />}
+        />
+        <DropDownInput name="cart" icon="0" />
+        <span className="menu">Menu</span>
+        <FaBars className="menu-icon" size={15} color="black" />
+      </div>
+    </div>
+  );
 }

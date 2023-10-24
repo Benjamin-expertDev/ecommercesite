@@ -1,0 +1,36 @@
+.nav-button {
+  border-radius: 20px;
+  padding: 5px;
+  border-color: #ffffff;
+  border-width: 0px;
+  background-color: #fafafa;
+  margin-right: 8px;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+}
+
+.nav-button .accessories {
+  display: flex;
+}
+
+.nav-button .accessories span:first-child {
+  font-size: 1rem;
+  align-self: center;
+  margin-right: 20px;
+  margin-left: 10px;
+  color: #888888;
+}
+
+.nav-button .accessories .circle {
+  background-color: #ffffff;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f3f3f3;
+}
