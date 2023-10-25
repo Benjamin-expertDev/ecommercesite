@@ -15,6 +15,10 @@
 .main-button-add:hover{
     cursor: pointer;
 }
+.main .main-place .reacticon{
+    display: flex;
+    margin-right: 2px;
+  }
 .main-button-add{
     background-color: greenyellow;
     border-radius: 20px;
