@@ -1,0 +1,11 @@
+.price .main-button-add{
+    background-color: greenyellow;
+    border-radius: 20px;
+    padding: 5px;
+    border-color: #ffffff;
+    border-width: 0px;
+    margin-left: 5px;
+}
+.price .price-button{
+    display: flex;
+}

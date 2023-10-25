@@ -1,12 +1,13 @@
 import React from "react";
 import "./Main.css"
-import { FaApple, FaGooglePlay, FaStepForward, FaAngleDown } from 'react-icons/fa';
+import { FaApple, FaGooglePlay, FaAngleDown } from 'react-icons/fa';
 import watch from "../assets/images/watch.jpg"
 import MainButton from "./common/MainButton";
 import Strap from "../assets/images/strap.png"
 import "../components/common/ReactIcon"
 import ReactIcon from "../components/common/ReactIcon";
-
+import "../components/Price"
+import Price from "../components/Price";
 export default function Main(){
     return(
     <div className="main">
@@ -24,9 +25,9 @@ export default function Main(){
             <img src={Strap} alt="strap" />
             
             </nav>
-        <span className="span">legacy black sport band for apple watch made from a custom-developed silicone and designed for whatever life throws on it</span>
-        <MainButton name = "$49.99"/>
-        <button className="main-button-add">add to cart <FaStepForward size={13} color="black" /></button>
+        
+        <Price />
+        
         
        <nav className="lower-buttons">
         <nav>
@@ -36,7 +37,7 @@ export default function Main(){
         <button className="delivery-button">delivery</button>
         </nav>
          </nav>
-         <nav><MainButton name = "best seller"/><img src={watch} alt="watch" width ="600" /></nav>
+         <nav><MainButton name = "best seller"/><img src={watch} alt="watch" width ="550" /></nav>
          
     </div>
     )
