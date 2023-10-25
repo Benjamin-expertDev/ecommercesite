@@ -13,10 +13,10 @@ export default function Main(){
         <nav>
         <nav className="main-place">
         <MainButton name = "back home"/>
-        <nav>
-            <ReactIcon name ="<FaApple size={14}  />"/>
-        
-            <FaGooglePlay size={14} color="black" />
+        <nav className="reacticon">
+            <ReactIcon icon ={<FaApple size={14}  />}/>
+            <ReactIcon icon ={<FaGooglePlay size={14} />} />
+            
         </nav>        
         
         </nav>

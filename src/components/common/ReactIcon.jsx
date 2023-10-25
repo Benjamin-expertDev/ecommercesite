@@ -4,9 +4,9 @@ import "./ReactIcon.css"
 function ReactIcon({icon}){
     return(
         <div className="icon">
-        <span>{icon}</span>
-        <span className="icon-circle">
-          
+        
+        <span className="icon-circle" >
+        {icon}
         </span>
         </div>
     )
